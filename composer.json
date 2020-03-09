@@ -32,6 +32,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "discard-changes": true,
+        "optimize-autoloader": true,
         "sort-packages": true
     },
     "extra": {
