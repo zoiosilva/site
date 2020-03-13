@@ -55,11 +55,11 @@ build:
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
     # The deploy hook runs after your application has been deployed and started.
-    deploy: |
+    post_deploy: |
         set -e
         php ./drush/platformsh_generate_drush_yml.php
         cd web
-        drush -y -vvv updatedb
+        drush -y updatedb
         drush -y config-import
         drush -y cache-rebuild
 
