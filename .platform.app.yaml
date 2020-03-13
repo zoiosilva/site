@@ -59,7 +59,7 @@ hooks:
         set -e
         php ./drush/platformsh_generate_drush_yml.php
         cd web
-        drush -y updatedb
+        drush -y -vvv updatedb
         drush -y config-import
         drush -y cache-rebuild
 
