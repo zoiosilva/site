@@ -5,7 +5,7 @@
  * Platform.sh utilities for integrating with Drush.
  */
 
-require_once(__DIR__ . '/../vendor/autoload.php');
+require_once __DIR__ . '/../vendor/autoload.php';
 
 /**
  * Returns a site URL to use with Drush, if possible.
