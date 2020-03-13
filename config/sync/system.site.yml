@@ -1,0 +1,14 @@
+uuid: 7cb383e7-6fee-4b5b-b5ee-012422e08c93
+name: 'Zoio''s Personal Corner'
+mail: zoiosilva@yahoo.com.br
+slogan: WRAAAAAAAAAA!!!
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: pt-br
+default_langcode: pt-br
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

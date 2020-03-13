@@ -1,0 +1,22 @@
+uuid: 6ae39dd7-313b-4769-8643-99b7fdeeafb6
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: seven_local_tasks
+theme: seven
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Abas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
