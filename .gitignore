@@ -22,3 +22,7 @@ console/
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore custom aditional stuff.
+/report.*.json
+/*.sql
