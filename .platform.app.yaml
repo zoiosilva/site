@@ -54,6 +54,11 @@ build:
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
+    # The build hook is run after the build flavor (if any).
+    build: |
+        set -e
+        bash install-uploadprogress.sh uploadprogress-1.1.3
+
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
         set -e
