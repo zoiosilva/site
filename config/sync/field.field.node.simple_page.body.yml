@@ -1,0 +1,23 @@
+uuid: 85404e0c-c49a-47db-bb24-55ac6a0a618c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.simple_page
+  module:
+    - text
+id: node.simple_page.body
+field_name: body
+entity_type: node
+bundle: simple_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

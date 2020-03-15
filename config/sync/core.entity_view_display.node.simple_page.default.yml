@@ -1,0 +1,29 @@
+uuid: ba8832a5-eb53-4c9d-ac57-0d07bb751b5b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.simple_page.body
+    - node.type.simple_page
+  module:
+    - text
+    - user
+id: node.simple_page.default
+targetEntityType: node
+bundle: simple_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
