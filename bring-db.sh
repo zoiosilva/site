@@ -1,7 +1,7 @@
 #!/bin/bash
 
-platform drush sql:dump > banco.sql \
+platform drush sql:dump > database.sql \
   && drush -y sql:drop \
-  && sudo mysql -uroot d8_personalsite < banco.sql \
-  && rm -f banco.sql \
+  && sudo mysql -uroot d8_personalsite < database.sql \
+  && rm -f database.sql \
   && drush cr
