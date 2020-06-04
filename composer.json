@@ -19,7 +19,7 @@
         "drupal/admin_toolbar": "^2.0",
         "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-project-message": "^8.8",
+        "drupal/core-project-message": "^9.0",
         "drupal/core-recommended": "^8.8",
         "drupal/redis": "^1.2",
         "drush/drush": "^10.1",
