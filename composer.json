@@ -21,6 +21,7 @@
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-project-message": "^9.0",
         "drupal/core-recommended": "^8.8",
+        "drupal/devel": "^4.0",
         "drupal/redis": "^1.2",
         "drush/drush": "^10.1",
         "platformsh/config-reader": "^2.3"
@@ -38,6 +39,7 @@
         "platform": {
             "php": "7.3.15"
         },
+        "process-timeout": 1200,
         "sort-packages": true
     },
     "extra": {
