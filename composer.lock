@@ -2223,16 +2223,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "10.4.3",
+            "version": "10.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "472ce3e0ac48b418f8168a053b3bcb4c8582bf99"
+                "reference": "3fd9f7e62ffb7f221e4be8151a738529345d22d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/472ce3e0ac48b418f8168a053b3bcb4c8582bf99",
-                "reference": "472ce3e0ac48b418f8168a053b3bcb4c8582bf99",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/3fd9f7e62ffb7f221e4be8151a738529345d22d5",
+                "reference": "3fd9f7e62ffb7f221e4be8151a738529345d22d5",
                 "shasum": ""
             },
             "require": {
@@ -2357,7 +2357,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-14T14:08:05+00:00"
+            "time": "2021-05-08T15:49:30+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -4728,16 +4728,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.20",
+            "version": "v4.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2543795ab1570df588b9bbd31e1a2bd7037b94f6"
+                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2543795ab1570df588b9bbd31e1a2bd7037b94f6",
-                "reference": "2543795ab1570df588b9bbd31e1a2bd7037b94f6",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/67b77716f517e3f864759232e1201e7aa2ab0e82",
+                "reference": "67b77716f517e3f864759232e1201e7aa2ab0e82",
                 "shasum": ""
             },
             "require": {
@@ -4782,7 +4782,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-12T10:48:09+00:00"
+            "time": "2021-05-09T09:13:09+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
