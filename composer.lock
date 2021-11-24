@@ -2005,7 +2005,7 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.2.9",
+            "version": "9.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
