@@ -594,16 +594,16 @@
         },
         {
             "name": "consolidation/log",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/log.git",
-                "reference": "82a2aaaa621a7b976e50a745a8d249d5085ee2b1"
+                "reference": "82339860317d46eacf63e74d9c3b9b08b0adcfba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/log/zipball/82a2aaaa621a7b976e50a745a8d249d5085ee2b1",
-                "reference": "82a2aaaa621a7b976e50a745a8d249d5085ee2b1",
+                "url": "https://api.github.com/repos/consolidation/log/zipball/82339860317d46eacf63e74d9c3b9b08b0adcfba",
+                "reference": "82339860317d46eacf63e74d9c3b9b08b0adcfba",
                 "shasum": ""
             },
             "require": {
@@ -638,7 +638,7 @@
                 }
             ],
             "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
-            "time": "2020-12-10T16:26:23+00:00"
+            "time": "2021-12-30T03:51:52+00:00"
         },
         {
             "name": "consolidation/output-formatters",
