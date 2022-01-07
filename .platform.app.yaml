@@ -7,7 +7,7 @@
 name: 'app'
 
 # The runtime the application uses.
-type: 'php:7.3'
+type: 'php:8.1'
 
 # The relationships of the application with services or other applications.
 #
@@ -57,7 +57,7 @@ hooks:
     # The build hook is run after the build flavor (if any).
     build: |
         set -e
-        bash install-uploadprogress.sh uploadprogress-1.1.3
+        bash install-uploadprogress.sh uploadprogress-2.0.2
 
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
