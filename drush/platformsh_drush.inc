@@ -23,11 +23,11 @@ function _platformsh_drush_site_url() {
 
   // Sort URLs, with the primary route first, then by HTTPS before HTTP, then by length.
   usort($routes, function (array $a, array $b) {
-    // false sorts before true, normally, so negate the comparison.
+    // False sorts before true, normally, so negate the comparison.
     return
       [!$a['primary'], strpos($a['url'], 'https://') !== 0, strlen($a['url'])]
       <=>
-      [!$a['primary'], strpos($a['url'], 'https://') !== 0, strlen($b['url'])];
+      [!$b['primary'], strpos($b['url'], 'https://') !== 0, strlen($b['url'])];
   });
 
   // Return the url of the first one.

@@ -6,14 +6,14 @@
 </a>
 </p>
 
-This template builds Drupal 8 using the "Drupal Recommended" Composer project.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.
+This template builds Drupal 9 using the "Drupal Recommended" Composer project.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.
 
 Drupal is a flexible and extensible PHP-based CMS framework.
 
 ## Services
 
-* PHP 7.3
-* MariaDB 10.2
+* PHP 8.1
+* MariaDB 10.4
 * Redis 5
 
 ## Post-install
