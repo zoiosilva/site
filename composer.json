@@ -21,7 +21,7 @@
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/redis": "^1.2",
-        "drush/drush": "^10.1",
+        "drush/drush": "^11.0",
         "platformsh/config-reader": "^2.3"
     },
     "require-dev": {
