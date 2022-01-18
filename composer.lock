@@ -132,16 +132,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "2.3.2",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "29db570d5061943db0ccb9fd956a3edc6bc5989a"
+                "reference": "872086aeeee1c933adc403d98c35dc029e26ae7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/29db570d5061943db0ccb9fd956a3edc6bc5989a",
-                "reference": "29db570d5061943db0ccb9fd956a3edc6bc5989a",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/872086aeeee1c933adc403d98c35dc029e26ae7c",
+                "reference": "872086aeeee1c933adc403d98c35dc029e26ae7c",
                 "shasum": ""
             },
             "require": {
@@ -188,9 +188,9 @@
             "description": "Drupal code generator",
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
-                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.3.2"
+                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.4.0"
             },
-            "time": "2022-01-12T07:19:58+00:00"
+            "time": "2022-01-18T04:19:55+00:00"
         },
         {
             "name": "composer/installers",
@@ -7550,5 +7550,5 @@
     "platform-overrides": {
         "php": "8.1"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
