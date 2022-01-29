@@ -1,0 +1,39 @@
+name: Coding Standards
+
+on:
+  pull_request:
+    paths-ignore:
+      - "**/includes/**"
+      - "**/libraries/**"
+      - "**/node_modules/**"
+      - "**/source/**"
+      - "**/vendor/**"
+
+jobs:
+  phpcs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # 0 indicates all history for all branches and tags.
+
+      # Need to install Composer to be able to add the coding standards rules.
+      - name: Installing Composer
+        run: |
+          php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+          php composer-setup.php
+          php -r "unlink('composer-setup.php');"
+
+      - name: Downloading and installing PHP_CodeSniffer and the Drupal coding standards rules
+        run: |
+          php composer.phar global require --optimize-autoloader --sort-packages php-parallel-lint/php-parallel-lint phpcompatibility/php-compatibility drupal/coder slevomat/coding-standard dealerdirect/phpcodesniffer-composer-installer phpcompatibility/php-compatibility:*
+          export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+      - name: Checking coding standards
+        uses: thenabeel/action-phpcs@v8
+        with:
+          files: "**.inc,**.install,**.module,**.php,**.profile,**.theme"
+          phpcs_path: $HOME/.composer/vendor/bin/phpcs
+          standard: phpcs.xml
+          scope: files

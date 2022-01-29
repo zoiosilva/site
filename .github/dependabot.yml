@@ -4,8 +4,8 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-    time: "09:00"
-    timezone: America/New_York
+    time: "08:00"
+    timezone: America/Campo_Grande
   open-pull-requests-limit: 10
   reviewers:
   - zoiosilva
@@ -14,17 +14,3 @@ updates:
   allow:
   - dependency-type: direct
   - dependency-type: indirect
-  ignore:
-  - dependency-name: drupal/core-recommended
-    versions:
-    - 9.1.6
-  - dependency-name: drupal/core-composer-scaffold
-    versions:
-    - 9.1.6
-  - dependency-name: drush/drush
-    versions:
-    - 10.4.1
-    - 10.4.2
-  - dependency-name: symfony/filesystem
-    versions:
-    - 4.4.21

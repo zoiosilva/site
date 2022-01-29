@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="very_strict">
+  <description>Custom Strict Drupal coding standards.</description>
+  <arg name="extensions" value="inc,install,md,module,php,profile,test,txt,theme,yml"/>
+  <arg name="colors"/>
+  <arg name="report-width" value="auto"/>
+  
+  <!-- Check for cross-version support for PHP 8.1 and higher. -->
+  <config name="testVersion" value="8.1-"/>
+
+  <!--Exclude third party code.-->
+  <exclude-pattern>*/libraries/*</exclude-pattern>
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+  <exclude-pattern>*/source/*</exclude-pattern>
+  <exclude-pattern>./vendor/*</exclude-pattern>
+  <exclude-pattern>*/README.md</exclude-pattern>
+  <exclude-pattern>./web/core/*</exclude-pattern>
+  <exclude-pattern>./web/update.php</exclude-pattern>
+  <exclude-pattern>./web/index.php</exclude-pattern>
+  <exclude-pattern>./web/autoload.php</exclude-pattern>
+  <exclude-pattern>./site/drush/platformsh_drush.inc</exclude-pattern>
+  <exclude-pattern>./site/drush/platformsh_generate_drush_yml.php</exclude-pattern>
+  <exclude-pattern>*/settings*.php</exclude-pattern>
+  <exclude-pattern>./web/modules/contrib/*</exclude-pattern>
+  <exclude-pattern>*/.git/*</exclude-pattern>
+
+  <rule ref="Drupal"/>  
+  <rule ref="DrupalPractice"/>
+  <rule ref="PHPCompatibility">
+    <include-pattern>./web/*</include-pattern>
+  </rule>
+
+  <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <properties>
+      <property name="withSpaces" value="no"/>
+      <property name="shortNullable" value="yes"/>
+      <property name="nullPosition" value="first"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+    <properties>
+      <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+      <property name="spacesCountAroundEqualsSign" value="1"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
+  <rule ref="SlevomatCodingStandard.Classes.ClassStructure"/>
+  <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
+  <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
+  <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
+  <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
+  <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
+  <rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>
+  <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
+  <rule ref="SlevomatCodingStandard.PHP.UselessParentheses">
+    <properties>
+      <property name="ignoreComplexTernaryConditions" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
+  <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/>
+  <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
+  <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
+    <properties>
+      <property name="ignoreUnusedValuesWhenOnlyKeysAreUsedInForeach" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+  <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
+  <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace">
+    <properties>
+      <property name="spacesAroundBrackets" value="0"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+  <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing">
+    <properties>
+      <property name="linesCountBetweenMembers" value="2"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/>
+  <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/>
+  <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
+    <properties>
+      <property name="minLinesCount" value="1"/>
+      <property name="maxLinesCount" value="1"/> 
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
+  <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
+    <properties>
+      <property name="caseSensitive" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
+  <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
+  <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"/>
+  <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+  <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
+  <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/>
+  <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/>
+  <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/>
+</ruleset>
