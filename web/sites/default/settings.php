@@ -220,7 +220,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = "$app_root/config/sync";
+$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/config/sync';
 
 /**
  * Settings:
@@ -249,7 +249,7 @@ $settings['config_sync_directory'] = "$app_root/config/sync";
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = "$app_root/config.salt.txt";
+$settings['hash_salt'] = file_get_contents(dirname(DRUPAL_ROOT) . '/config/salt.txt');
 
 /**
  * Deployment identifier.
@@ -488,7 +488,7 @@ $settings['update_free_access'] = FALSE;
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-$settings['file_public_path'] = 'sites/default/files';
+$settings['file_public_path'] = "$app_root/$site_path/files";
 
 /**
  * Private file path:
@@ -503,7 +503,7 @@ $settings['file_public_path'] = 'sites/default/files';
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = "$app_root/config/private";
+$settings['file_private_path'] = dirname(DRUPAL_ROOT) . '/config/private';
 
 /**
  * Temporary file path:
@@ -516,7 +516,7 @@ $settings['file_private_path'] = "$app_root/config/private";
  *
  * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
  */
-$settings['file_temp_path'] = "$app_root/config/tmp";
+$settings['file_temp_path'] = dirname(DRUPAL_ROOT) . '/config/tmp';
 
 /**
  * Session write interval:
