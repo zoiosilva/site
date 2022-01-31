@@ -13,6 +13,8 @@ console/
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
+/config/private/
+/config/tmp/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
@@ -26,3 +28,15 @@ console/
 # Ignore custom aditional stuff.
 /report.*.json
 /*.sql
+/.csslintrc
+/.eslintignore
+/.eslintrc.json
+/.ht.router.php
+/.htaccess
+/INSTALL.txt
+/autoload.php
+/example.gitignore
+/index.php
+/robots.txt
+/update.php
+/web.config
