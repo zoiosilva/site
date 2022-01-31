@@ -77,10 +77,15 @@
             ]
         },
         "drupal-scaffold": {
+            "allowed-packages": [
+                "drupal/core"
+            ],
             "locations": {
                 "web-root": "web/",
                 "project-root": "./"
-            }
+            },
+            "symlink": true,
+            "overwrite": true
         },
         "gitignore": false
     }
