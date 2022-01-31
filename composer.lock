@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d5a042ff6f3a4e7637a1562fc246f60",
+    "content-hash": "8cacd1f6e9520119c4d740f73b1779ba",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -637,16 +637,16 @@
         },
         {
             "name": "consolidation/log",
-            "version": "2.0.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/log.git",
-                "reference": "fc9ec5476ba13a31778695bd2d4f2fa0b0684356"
+                "reference": "9efdd57031bf2fda033f6a256cd8b7902a4e6b92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/log/zipball/fc9ec5476ba13a31778695bd2d4f2fa0b0684356",
-                "reference": "fc9ec5476ba13a31778695bd2d4f2fa0b0684356",
+                "url": "https://api.github.com/repos/consolidation/log/zipball/9efdd57031bf2fda033f6a256cd8b7902a4e6b92",
+                "reference": "9efdd57031bf2fda033f6a256cd8b7902a4e6b92",
                 "shasum": ""
             },
             "require": {
@@ -683,9 +683,9 @@
             "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
             "support": {
                 "issues": "https://github.com/consolidation/log/issues",
-                "source": "https://github.com/consolidation/log/tree/2.0.4"
+                "source": "https://github.com/consolidation/log/tree/2.1.0"
             },
-            "time": "2021-12-30T19:05:18+00:00"
+            "time": "2022-01-30T03:49:07+00:00"
         },
         {
             "name": "consolidation/output-formatters",
@@ -2263,60 +2263,45 @@
             "time": "2022-01-19T00:13:54+00:00"
         },
         {
-            "name": "drupal/redis",
-            "version": "1.5.0",
+            "name": "drupal/core-vendor-hardening",
+            "version": "9.3.3",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/redis.git",
-                "reference": "8.x-1.5"
+                "url": "https://github.com/drupal/core-vendor-hardening.git",
+                "reference": "9df7917c08e81b2b5f94c1c101c03326ef462cb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "4283333dc2bf405045765b83ca662acc409a6543"
+                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/9df7917c08e81b2b5f94c1c101c03326ef462cb4",
+                "reference": "9df7917c08e81b2b5f94c1c101c03326ef462cb4",
+                "shasum": ""
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "composer-plugin-api": "^1.1 || ^2",
+                "php": ">=7.3.0"
             },
-            "suggest": {
-                "predis/predis": "^1.1.1"
-            },
-            "type": "drupal-module",
+            "type": "composer-plugin",
             "extra": {
-                "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1609972488",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
+                "class": "Drupal\\Composer\\Plugin\\VendorHardening\\VendorHardeningPlugin"
             },
             "autoload": {
                 "psr-4": {
-                    "Drupal\\redis\\": "src"
+                    "Drupal\\Composer\\Plugin\\VendorHardening\\": "."
                 }
             },
-            "notification-url": "https://packages.drupal.org/8/downloads",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "pounard",
-                    "homepage": "https://www.drupal.org/user/240164"
-                }
+            "description": "Hardens the vendor directory for when it's in the docroot.",
+            "homepage": "https://www.drupal.org/project/drupal",
+            "keywords": [
+                "drupal"
             ],
-            "description": "Integration of Drupal with the Redis key-value store.",
-            "homepage": "https://www.drupal.org/project/redis",
             "support": {
-                "source": "https://git.drupalcode.org/project/redis"
-            }
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/9.3.3"
+            },
+            "time": "2021-11-15T02:22:54+00:00"
         },
         {
             "name": "drush/drush",
@@ -3653,49 +3638,6 @@
                 "source": "https://github.com/pear/PEAR_Exception"
             },
             "time": "2021-03-21T15:43:46+00:00"
-        },
-        {
-            "name": "platformsh/config-reader",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/platformsh/config-reader-php.git",
-                "reference": "5511abfdb673ccfcf0eac9eaf65204f73edd90fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/5511abfdb673ccfcf0eac9eaf65204f73edd90fd",
-                "reference": "5511abfdb673ccfcf0eac9eaf65204f73edd90fd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Platformsh\\ConfigReader\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Larry Garfield",
-                    "email": "larry@platform.sh"
-                }
-            ],
-            "description": "Small helper to access Platform.sh environment variables",
-            "support": {
-                "issues": "https://github.com/platformsh/config-reader-php/issues",
-                "source": "https://github.com/platformsh/config-reader-php/tree/2.4.0"
-            },
-            "time": "2020-12-10T20:50:12+00:00"
         },
         {
             "name": "psr/cache",
