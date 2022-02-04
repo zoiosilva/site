@@ -13,6 +13,26 @@ console/
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
+/config/private/
+/config/tmp/
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
@@ -24,5 +44,19 @@ console/
 /.env
 
 # Ignore custom aditional stuff.
-/report.*.json
-/*.sql
+*/report.*.json
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.gitignore
+web/.ht.router.php
+web/.htaccess
+web/INSTALL.txt
+web/autoload.php
+web/example.gitignore
+web/index.php
+web/robots.txt
+web/update.php
+web/README.md
+web/web.config
+/.editorconfig
