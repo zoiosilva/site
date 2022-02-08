@@ -2264,7 +2264,7 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "9.3.4",
+            "version": "9.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -2299,7 +2299,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-vendor-hardening/tree/9.3.4"
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/9.3.5"
             },
             "time": "2021-11-15T02:22:54+00:00"
         },
