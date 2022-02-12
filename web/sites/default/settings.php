@@ -89,10 +89,10 @@
  * @endcode
  */
 $databases['default']['default'] = [
-  'database' => 'site',
-  'username' => parse_url(getenv('STACKHERO_MARIADB_USER')),
-  'password' => parse_url(getenv('STACKHERO_MARIADB_PASSWORD')),
-  'host' => parse_url(getenv('STACKHERO_MARIADB_HOST')),
+  'database' => getenv('STACKHERO_MARIADB_DATABASE'),
+  'username' => getenv('STACKHERO_MARIADB_USER'),
+  'password' => getenv('STACKHERO_MARIADB_PASSWORD'),
+  'host' => getenv('STACKHERO_MARIADB_HOST'),
   'port' => '3306',
   'driver' => 'mysql',
   'prefix' => '',
