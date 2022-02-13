@@ -14,6 +14,7 @@
         "ext-apcu": "*",
         "ext-curl": "*",
         "ext-mbstring": "*",
+        "ext-redis": "*",
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^3.0",
         "drupal/console": "^1.9",
