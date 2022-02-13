@@ -412,7 +412,6 @@ $settings['update_free_access'] = FALSE;
  */
 # $settings['omit_vary_cookie'] = TRUE;
 
-
 /**
  * Cache TTL for client error (4xx) responses.
  *
@@ -763,6 +762,20 @@ $settings['entity_update_backup'] = TRUE;
  * node migrations.
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
+
+$enableRedis = !\Drupal\Core\Installer\InstallerKernel::installationAttempted()
+  && extension_loaded('redis')
+  && class_exists('Drupal\redis\ClientFactory')
+  && !empty(getenv('REDIS_URL'));
+
+if ($enableRedis) {
+  $redisUrl = parse_url(getenv('REDIS_URL'));
+  $settings['redis.connection']['interface'] = 'PhpRedis';
+  $settings['redis.connection']['host'] = $redisUrl['host'];
+  $settings['redis.connection']['port'] =  $redisUrl['port'];
+  $settings['cache']['default'] = 'cache.backend.redis';
+  $settings['container_yamls'][] = 'modules/redis/example.services.yml';
+}
 
 /**
  * Load local development override configuration, if available.
