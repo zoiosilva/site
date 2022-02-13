@@ -14,13 +14,13 @@
         "ext-apcu": "*",
         "ext-curl": "*",
         "ext-mbstring": "*",
-        "ext-uploadprogress": "*",
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^3.0",
         "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/core-vendor-hardening": "^9.3",
+        "drupal/redis": "^1.5",
         "drush/drush": "^11.0"
     },
     "require-dev": {

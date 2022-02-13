@@ -6,6 +6,10 @@ Get an environment variable:
 ```
 heroku config:get STACKHERO_MARIADB_HOST
 ```
+List all environment variables:
+```
+heroku config
+```
 Open PHPMyAdmin:
 ```
 heroku addons:open ah-mariadb-stackhero
@@ -21,4 +25,15 @@ mysql -h yqk6vk.stackhero-network.com -u root -p --ssl
 ## Drush:
 ```
 heroku run drush uli
+```
+
+## Redis
+Reference: https://devcenter.heroku.com/articles/heroku-redis
+```
+# List all addons
+heroku addons
+# Adding redis
+heroku addons:create heroku-redis:hobby-dev -a polar-basin-71973
+heroku addons:info heroku-redis
+heroku config | grep REDIS
 ```
