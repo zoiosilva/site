@@ -764,13 +764,14 @@ $settings['entity_update_backup'] = TRUE;
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 $enableRedis = !\Drupal\Core\Installer\InstallerKernel::installationAttempted()
+  && extension_loaded('redis')
   && class_exists(\Drupal\redis\ClientFactory::class)
-  && !empty(getenv('REDIS_TLS_URL'));
+  && !empty($redis_url = getenv('REDIS_TLS_URL'));
 
 if ($enableRedis) {
-  $redisUrl = parse_url(getenv('REDIS_TLS_URL'));
+  $redisUrl = parse_url($redis_url);
   $settings['redis.connection']['interface'] = 'PhpRedis';
-  $settings['redis.connection']['host'] = $redisUrl['host'];
+  $settings['redis.connection']['host'] = 'tls://' . $redisUrl['host'];
   $settings['redis.connection']['port'] = $redisUrl['port'];
   $settings['redis.connection']['password'] = $redisUrl['pass'];
   $settings['cache']['default'] = 'cache.backend.redis';
