@@ -37,3 +37,4 @@ heroku addons:create heroku-redis:hobby-dev -a polar-basin-71973
 heroku addons:info heroku-redis
 heroku config | grep REDIS
 ```
+Issue found: https://help.heroku.com/HC0F8CUS/redis-connection-issues

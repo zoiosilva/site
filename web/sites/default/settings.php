@@ -766,7 +766,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 $enableRedis = !\Drupal\Core\Installer\InstallerKernel::installationAttempted()
   && extension_loaded('redis')
   && class_exists(\Drupal\redis\ClientFactory::class)
-  && !empty($redis_url = getenv('REDIS_URL'));
+  && !empty($redis_url = getenv('REDIS_TLS_URL'));
 
 if ($enableRedis) {
   $redisUrl = parse_url($redis_url);
