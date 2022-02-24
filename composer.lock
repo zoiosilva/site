@@ -132,22 +132,22 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "4aeedc25171d5b88fc5026152a6cf0cba5df722b"
+                "reference": "cd3912e25e20bb12b6dce8d522793f3abd71ab8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/4aeedc25171d5b88fc5026152a6cf0cba5df722b",
-                "reference": "4aeedc25171d5b88fc5026152a6cf0cba5df722b",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/cd3912e25e20bb12b6dce8d522793f3abd71ab8c",
+                "reference": "cd3912e25e20bb12b6dce8d522793f3abd71ab8c",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=7.4",
-                "psr/log": "^1.1",
+                "psr/log": "^1.1 || ^2.0",
                 "symfony/console": "^4.4.15 || ^5.1",
                 "symfony/filesystem": "^4.4 || ^5.1 || ^6",
                 "symfony/polyfill-php80": "^1.23",
@@ -188,9 +188,9 @@
             "description": "Drupal code generator",
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
-                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.5.0"
+                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.5.1"
             },
-            "time": "2022-02-22T09:28:47+00:00"
+            "time": "2022-02-24T10:39:38+00:00"
         },
         {
             "name": "composer/installers",
