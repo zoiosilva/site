@@ -16,6 +16,7 @@
         "ext-mbstring": "*",
         "ext-redis": "*",
         "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9.3",
@@ -50,7 +51,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/console-extend-plugin": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-vendor-hardening": true
+            "drupal/core-vendor-hardening": true,
+            "cweagans/composer-patches": true
         }
     },
     "extra": {
@@ -110,6 +112,11 @@
                 "[web-root]/themes/README.txt": false
             },
             "gitignore": false
+        },
+        "patches": {
+            "drupal/redis": {
+                "Fixing Redis 6 connection issues (https://help.heroku.com/HC0F8CUS/redis-connection-issues)": "assets/patches/redis/heroku_redis_6_compatibility.patch"
+            }
         }
     }
 }

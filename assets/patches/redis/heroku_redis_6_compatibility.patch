@@ -1,0 +1,15 @@
+diff --git a/src/Client/PhpRedis.php b/src/Client/PhpRedis.php
+index 7fe1141..f57c3d2 100644
+--- a/src/Client/PhpRedis.php
++++ b/src/Client/PhpRedis.php
+@@ -29,7 +29,9 @@ class PhpRedis implements ClientInterface {
+       $client->pconnect($host, $port);
+     }
+     else {
+-      $client->connect($host, $port);
++      $client->connect($host, $port, 0, NULL, 0, 0, [
++        "stream" => ["verify_peer" => false, "verify_peer_name" => false],
++      ]);
+     }
+ 
+     if (isset($password)) {
