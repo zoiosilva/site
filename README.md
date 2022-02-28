@@ -38,3 +38,7 @@ heroku addons:info heroku-redis
 heroku config | grep REDIS
 ```
 Issue found: https://help.heroku.com/HC0F8CUS/redis-connection-issues
+
+## Filesystem
+https://www.fomfus.com/articles/how-to-create-a-drupal-8-project-for-heroku-part-1/
+https://www.drupal.org/project/flysystem_s3

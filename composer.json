@@ -117,6 +117,12 @@
             "drupal/redis": {
                 "Fixing Redis 6 connection issues (https://help.heroku.com/HC0F8CUS/redis-connection-issues)": "assets/patches/redis/heroku_redis_6_compatibility.patch"
             }
+        },
+        "drupal-core-vendor-hardening": {
+          "drupal/admin_toolbar": ["tests", "admin_toolbar_search/tests", "admin_toolbar_tools/tests"],
+          "drupal/devel": ["tests", "devel_generate/tests"],
+          "drupal/devel_php": ["tests"],
+          "drupal/redis": ["tests"]
         }
     }
 }
