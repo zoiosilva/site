@@ -132,23 +132,23 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "2.5.1",
+            "version": "2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "cd3912e25e20bb12b6dce8d522793f3abd71ab8c"
+                "reference": "a49f29b0fe6b6c87fa7dc8979589ce8794c4d655"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/cd3912e25e20bb12b6dce8d522793f3abd71ab8c",
-                "reference": "cd3912e25e20bb12b6dce8d522793f3abd71ab8c",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/a49f29b0fe6b6c87fa7dc8979589ce8794c4d655",
+                "reference": "a49f29b0fe6b6c87fa7dc8979589ce8794c4d655",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=7.4",
-                "psr/log": "^1.1 || ^2.0",
-                "symfony/console": "^4.4.15 || ^5.1",
+                "psr/log": "^1.1 || ^2.0 || ^3.0",
+                "symfony/console": "^4.4.15 || ^5.1 || ^6.0",
                 "symfony/filesystem": "^4.4 || ^5.1 || ^6",
                 "symfony/polyfill-php80": "^1.23",
                 "symfony/string": "^5.1 || ^6",
@@ -160,12 +160,12 @@
             "require-dev": {
                 "chi-teck/drupal-coder-extension": "^1.2",
                 "drupal/coder": "^8.3.14",
-                "friendsoftwig/twigcs": "^5.0",
+                "friendsoftwig/twigcs": "dev-master",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.4",
                 "squizlabs/php_codesniffer": "^3.5",
-                "symfony/var-dumper": "^5.2",
-                "symfony/yaml": "^5.2"
+                "symfony/var-dumper": "^5.2 || ^6.0",
+                "symfony/yaml": "^5.2 || ^6.0"
             },
             "bin": [
                 "bin/dcg"
@@ -188,9 +188,9 @@
             "description": "Drupal code generator",
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
-                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.5.1"
+                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.5.3"
             },
-            "time": "2022-02-24T10:39:38+00:00"
+            "time": "2022-03-31T17:15:11+00:00"
         },
         {
             "name": "composer/installers",
@@ -9075,16 +9075,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v212",
+            "version": "v213",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "8b90c86b7bd15f6a516bb2d8e877cb30cd77b90a"
+                "reference": "a5acafd19b69670c03a128f275f231346a4cfdd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/8b90c86b7bd15f6a516bb2d8e877cb30cd77b90a",
-                "reference": "8b90c86b7bd15f6a516bb2d8e877cb30cd77b90a",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/a5acafd19b69670c03a128f275f231346a4cfdd3",
+                "reference": "a5acafd19b69670c03a128f275f231346a4cfdd3",
                 "shasum": ""
             },
             "bin": [
@@ -9114,9 +9114,9 @@
             ],
             "support": {
                 "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
-                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v212"
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v213"
             },
-            "time": "2022-02-25T17:31:55+00:00"
+            "time": "2022-03-17T22:04:03+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
