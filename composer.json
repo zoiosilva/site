@@ -118,6 +118,9 @@
             "gitignore": false
         },
         "patches": {
+            "drupal/core": {
+                "Deprecation message on Appearance page (https://www.drupal.org/project/drupal/issues/3258379)": "https://www.drupal.org/files/issues/2022-01-13/quick-fix-3258379-2.patch"
+            },
             "drupal/redis": {
                 "Fixing Redis 6 connection issues (https://help.heroku.com/HC0F8CUS/redis-connection-issues)": "assets/patches/redis/heroku_redis_6_compatibility.patch"
             }
