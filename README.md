@@ -42,3 +42,7 @@ Issue found: https://help.heroku.com/HC0F8CUS/redis-connection-issues
 ## Filesystem
 https://www.fomfus.com/articles/how-to-create-a-drupal-8-project-for-heroku-part-1/
 https://www.drupal.org/project/flysystem_s3
+https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys
+[Drupal and S3 Integration| Drupal with Private, Public or Presigned URL's](https://www.youtube.com/watch?v=nL01TBjJDAQ)
+
+* Create an amazon S3 bucket account;
