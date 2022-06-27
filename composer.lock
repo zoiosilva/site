@@ -5157,16 +5157,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.4.42",
+            "version": "v4.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "f6fdbf252765a09c7ac243617f79f1babef792c9"
+                "reference": "8d0ae6d87ceea5f3a352413f9d1f71ed2234dcbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/f6fdbf252765a09c7ac243617f79f1babef792c9",
-                "reference": "f6fdbf252765a09c7ac243617f79f1babef792c9",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/8d0ae6d87ceea5f3a352413f9d1f71ed2234dcbd",
+                "reference": "8d0ae6d87ceea5f3a352413f9d1f71ed2234dcbd",
                 "shasum": ""
             },
             "require": {
@@ -5223,7 +5223,7 @@
             "description": "Allows you to standardize and centralize the way objects are constructed in your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dependency-injection/tree/v4.4.42"
+                "source": "https://github.com/symfony/dependency-injection/tree/v4.4.43"
             },
             "funding": [
                 {
@@ -5239,7 +5239,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-24T15:15:52+00:00"
+            "time": "2022-06-22T15:01:38+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
