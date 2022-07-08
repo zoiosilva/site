@@ -1,0 +1,33 @@
+name: personal-site
+recipe: drupal9
+
+config:
+  site: personal-site
+  php: '8.1'
+  composer_version: '2-latest'
+  database: mariadb:10.4
+  webroot: web
+  xdebug: false
+
+env_file:
+  - .lando.env
+
+events:
+  post-db-import:
+    - appserver: drush cr
+
+services:
+  appserver:
+    build:
+      - composer install
+  redis:
+    type: redis:6
+
+tooling:
+  drush:
+    service: appserver
+    env:
+      DRUSH_OPTIONS_URI: "https://personal-site.lndo.site/"
+  drupal:
+    service: appserver
+    cmd: /app/vendor/bin/drupal
