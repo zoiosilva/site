@@ -20,7 +20,7 @@ services:
   appserver:
     build:
       - composer install
-  cache:
+  redis:
     type: redis:6
 
 tooling:
