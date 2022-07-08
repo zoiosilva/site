@@ -27,8 +27,8 @@ jobs:
 
       - name: Downloading and installing PHP_CodeSniffer and the Drupal coding standards rules
         run: |
-          php composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
-          php composer.phar global require --optimize-autoloader --sort-packages php-parallel-lint/php-parallel-lint phpcompatibility/php-compatibility drupal/coder slevomat/coding-standard dealerdirect/phpcodesniffer-composer-installer phpcompatibility/php-compatibility:*
+          php composer.phar config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+          php composer.phar global require --no-progress --optimize-autoloader --sort-packages php-parallel-lint/php-parallel-lint phpcompatibility/php-compatibility drupal/coder slevomat/coding-standard dealerdirect/phpcodesniffer-composer-installer phpcompatibility/php-compatibility:*
           export PATH="$HOME/.composer/vendor/bin:$PATH"
 
       - name: Checking coding standards
