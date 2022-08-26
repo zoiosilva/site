@@ -8803,23 +8803,23 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.15",
+            "version": "8.3.16",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coder.git",
-                "reference": "0cfad3a21f1168bdc3030ae73351c31f88abba74"
+                "reference": "d6f6112e5e84ff4f6baaada223c93dadbd6d3887"
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
                 "ext-mbstring": "*",
                 "php": ">=7.1",
-                "sirbrillig/phpcs-variable-analysis": "^2.10",
-                "slevomat/coding-standard": "^7.0",
-                "squizlabs/php_codesniffer": "^3.6.0",
-                "symfony/yaml": ">=2.0.5"
+                "sirbrillig/phpcs-variable-analysis": "^2.11.7",
+                "slevomat/coding-standard": "^7.0 || ^8.0",
+                "squizlabs/php_codesniffer": "^3.7.1",
+                "symfony/yaml": ">=3.4.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^1.4.9",
+                "phpstan/phpstan": "^1.7.12",
                 "phpunit/phpunit": "^7.0 || ^8.0"
             },
             "type": "phpcodesniffer-standard",
@@ -8844,7 +8844,7 @@
                 "issues": "https://www.drupal.org/project/issues/coder",
                 "source": "https://www.drupal.org/project/coder"
             },
-            "time": "2022-04-02T17:56:30+00:00"
+            "time": "2022-08-20T17:31:46+00:00"
         },
         {
             "name": "drupal/core-dev",
