@@ -9080,16 +9080,16 @@
         },
         {
             "name": "instaclick/php-webdriver",
-            "version": "1.4.14",
+            "version": "1.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "200b8df772b74d604bebf25ef42ad6f8ee6380a9"
+                "reference": "ed8f7741a0952db42686aae0780a0935138a7cf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/200b8df772b74d604bebf25ef42ad6f8ee6380a9",
-                "reference": "200b8df772b74d604bebf25ef42ad6f8ee6380a9",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/ed8f7741a0952db42686aae0780a0935138a7cf8",
+                "reference": "ed8f7741a0952db42686aae0780a0935138a7cf8",
                 "shasum": ""
             },
             "require": {
@@ -9137,9 +9137,9 @@
             ],
             "support": {
                 "issues": "https://github.com/instaclick/php-webdriver/issues",
-                "source": "https://github.com/instaclick/php-webdriver/tree/1.4.14"
+                "source": "https://github.com/instaclick/php-webdriver/tree/1.4.15"
             },
-            "time": "2022-04-19T02:06:59+00:00"
+            "time": "2022-08-09T14:26:29+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
