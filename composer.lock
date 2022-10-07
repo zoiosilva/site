@@ -9347,16 +9347,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v224",
+            "version": "v225",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "2df7a440119b0c9468fbace658eb0d528b4d6971"
+                "reference": "6e2edde4512d5af97aa79ee6f42fe84620306164"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/2df7a440119b0c9468fbace658eb0d528b4d6971",
-                "reference": "2df7a440119b0c9468fbace658eb0d528b4d6971",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/6e2edde4512d5af97aa79ee6f42fe84620306164",
+                "reference": "6e2edde4512d5af97aa79ee6f42fe84620306164",
                 "shasum": ""
             },
             "bin": [
@@ -9386,9 +9386,9 @@
             ],
             "support": {
                 "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
-                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v224"
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v225"
             },
-            "time": "2022-09-05T15:48:41+00:00"
+            "time": "2022-10-05T22:06:21+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
