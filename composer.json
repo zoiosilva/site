@@ -5,10 +5,6 @@
     "license": "GPL-3.0-or-later",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/issue/redis-3193478.git"
-        },
-        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
@@ -26,9 +22,9 @@
         "drupal/core-composer-scaffold": "*",
         "drupal/core-recommended": "^9.3",
         "drupal/core-vendor-hardening": "*",
-        "drupal/redis": "3193478-notice-trying-to-dev",
+        "drupal/redis": "^1.6",
         "drush/drush": "^11.0"
-      },
+    },
       "require-dev": {
         "drupal/core-dev": "*",
         "drupal/devel_php": "^1.3",
