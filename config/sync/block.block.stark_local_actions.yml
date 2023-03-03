@@ -1,11 +1,11 @@
-uuid: 31dbf4e5-6e48-4471-b2b0-77c11dccc5bf
+uuid: 434c9d4b-e156-464e-801b-4532354f5ab6
 langcode: pt-br
 status: true
 dependencies:
   theme:
     - stark
 _core:
-  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+  default_config_hash: ABoKnlk20KHqZRw_2Qr4EvaFvH4lnQ2nuhunHeE1JIU
 id: stark_local_actions
 theme: stark
 region: content
@@ -15,6 +15,6 @@ plugin: local_actions_block
 settings:
   id: local_actions_block
   label: 'Primary admin actions'
-  provider: core
   label_display: '0'
+  provider: core
 visibility: {  }

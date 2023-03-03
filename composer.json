@@ -10,23 +10,20 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "ext-apcu": "*",
         "ext-curl": "*",
         "ext-mbstring": "*",
-        "ext-redis": "*",
         "composer/installers": "^1.2 || ^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
-        "drupal/console": "^1.9 || ^2.0",
-        "drupal/core-composer-scaffold": "*",
-        "drupal/core-recommended": "^9.3 || ^10.0",
-        "drupal/core-vendor-hardening": "*",
-        "drupal/redis": "^1.6",
+        "drupal/core-composer-scaffold": "^10.0",
+        "drupal/core-recommended": "^10.0",
+        "drupal/core-vendor-hardening": "^10.0",
         "drush/drush": "^11.0"
     },
       "require-dev": {
-        "drupal/core-dev": "*",
+        "drupal/core-dev": "^10.0",
         "drupal/devel_php": "^1.3",
         "heroku/heroku-buildpack-php": "*",
         "php-parallel-lint/php-parallel-lint": "^1.3",
@@ -49,7 +46,8 @@
             "drupal/console-extend-plugin": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-vendor-hardening": true,
-            "cweagans/composer-patches": true
+            "cweagans/composer-patches": true,
+            "phpstan/extension-installer": true
         }
     },
     "extra": {
@@ -111,12 +109,6 @@
             "gitignore": false
         },
         "patches": {
-            "drupal/core": {
-                "Deprecation message on Appearance page (https://www.drupal.org/project/drupal/issues/3258379)": "https://www.drupal.org/files/issues/2022-01-13/quick-fix-3258379-2.patch"
-            },
-            "drupal/redis": {
-                "Fixing Redis 6 connection issues (https://help.heroku.com/HC0F8CUS/redis-connection-issues)": "assets/patches/redis/heroku_redis_6_compatibility.patch"
-            }
         },
         "drupal-core-vendor-hardening": {
           "drupal/admin_toolbar": ["tests", "admin_toolbar_search/tests", "admin_toolbar_tools/tests"],

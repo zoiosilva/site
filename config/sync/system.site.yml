@@ -1,14 +1,14 @@
-uuid: bdc3e086-a4f0-47e5-896d-2cba37946c21
-name: 'Zoio''s Personal Corner'
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: pt-br
+uuid: 0f0a35e1-d4d4-4f56-8a3f-80450114870c
+name: 'Personal Site'
 mail: zoiosilva@yahoo.com.br
-slogan: WRAAAAAAAAAA!!!
+slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
-langcode: pt-br
 default_langcode: pt-br
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

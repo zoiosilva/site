@@ -1,12 +1,12 @@
+_core:
+  default_config_hash: t7clj3mzmOGrXX0HuCH5usf0vEqRtnMTBFVBIEmZ5pc
+langcode: pt-br
+first_day: 0
 country:
   default: BR
-first_day: 0
 timezone:
-  default: America/Campo_Grande
+  default: America/Cuiaba
   user:
     configurable: true
-    warn: false
     default: 0
-_core:
-  default_config_hash: V9UurX2GPT05NWKG9f2GWQqFG2TRG8vczidwjpy7Woo
-langcode: pt-br
+    warn: false

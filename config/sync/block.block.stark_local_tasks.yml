@@ -1,11 +1,11 @@
-uuid: 94917cdc-5452-4edb-8a47-112c71c207a0
+uuid: 8ea1ef92-acd1-4f54-aa54-a24a44737a61
 langcode: pt-br
 status: true
 dependencies:
   theme:
     - stark
 _core:
-  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+  default_config_hash: T0wbI6qVdThbbIqXDZFg_1VZ3_ittXBdEoUH7d7ux_E
 id: stark_local_tasks
 theme: stark
 region: content
@@ -15,8 +15,8 @@ plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Abas
-  provider: core
   label_display: '0'
+  provider: core
   primary: true
   secondary: true
 visibility: {  }

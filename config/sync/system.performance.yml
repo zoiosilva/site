@@ -1,6 +1,9 @@
+_core:
+  default_config_hash: b2cssrj-lOmATIbdehfCqfCFgVR0qCdxxWhwqa2KBVQ
+langcode: pt-br
 cache:
   page:
-    max_age: 0
+    max_age: 60
 css:
   preprocess: true
   gzip: true
@@ -13,6 +16,3 @@ js:
   preprocess: true
   gzip: true
 stale_file_threshold: 2592000
-_core:
-  default_config_hash: b2cssrj-lOmATIbdehfCqfCFgVR0qCdxxWhwqa2KBVQ
-langcode: pt-br

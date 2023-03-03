@@ -2,16 +2,16 @@ name: personal-site
 recipe: drupal9
 config:
   webroot: web
-  php: '8.1'
+  php: '8.2'
   composer_version: 2-latest
   database: mariadb:10.6
   xdebug: false
 
-services:
-  cache:
-    type: redis:6.0.16
-    persist: true
-    portforward: true
+# services:
+#   cache:
+#     type: redis:6.0.16
+#     persist: true
+#     portforward: true
 
 env_file:
   - .lando.env

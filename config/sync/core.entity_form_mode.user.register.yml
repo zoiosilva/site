@@ -1,4 +1,4 @@
-uuid: 41ed0623-fd0d-4d58-a260-7f099a9cd057
+uuid: 2a59a042-a402-4b42-964e-a5759a07c7a5
 langcode: pt-br
 status: true
 dependencies:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
 id: user.register
-label: Registrar
+label: Registro
 targetEntityType: user
 cache: true

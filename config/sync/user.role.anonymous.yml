@@ -1,7 +1,9 @@
-uuid: 4d577e4d-c98b-4286-8238-9249577711a2
+uuid: 8fdb5be2-0704-4bd2-88d7-37bfa8b57593
 langcode: pt-br
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous

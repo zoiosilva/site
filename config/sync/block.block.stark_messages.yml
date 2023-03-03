@@ -1,4 +1,4 @@
-uuid: 5b2127d3-d758-4cb7-8062-1a9d18b15be7
+uuid: a89ef68c-8c62-459c-bfad-38b58663b4c5
 langcode: pt-br
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - stark
 _core:
-  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+  default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
 id: stark_messages
 theme: stark
 region: highlighted
@@ -16,7 +16,7 @@ provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Mensagens de status'
-  provider: system
+  label: 'Status messages'
   label_display: '0'
+  provider: system
 visibility: {  }

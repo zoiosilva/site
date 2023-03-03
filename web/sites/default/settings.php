@@ -763,63 +763,63 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
-$enableRedis = !\Drupal\Core\Installer\InstallerKernel::installationAttempted()
-  && extension_loaded('redis')
-  && class_exists(\Drupal\redis\ClientFactory::class)
-  && !empty($redis_url = getenv('REDIS_TLS_URL'));
+// $enableRedis = !\Drupal\Core\Installer\InstallerKernel::installationAttempted()
+//   && extension_loaded('redis')
+//   && class_exists(\Drupal\redis\ClientFactory::class)
+//   && !empty($redis_url = getenv('REDIS_TLS_URL'));
 
-if ($enableRedis) {
-  $redisUrl = parse_url($redis_url);
-  $settings['redis.connection']['interface'] = 'PhpRedis';
-  $settings['redis.connection']['host'] = 'tls://' . $redisUrl['host'];
-  $settings['redis.connection']['port'] = $redisUrl['port'];
-  $settings['redis.connection']['password'] = $redisUrl['pass'];
-  $settings['cache']['default'] = 'cache.backend.redis';
+// if ($enableRedis) {
+//   $redisUrl = parse_url($redis_url);
+//   $settings['redis.connection']['interface'] = 'PhpRedis';
+//   $settings['redis.connection']['host'] = 'tls://' . $redisUrl['host'];
+//   $settings['redis.connection']['port'] = $redisUrl['port'];
+//   $settings['redis.connection']['password'] = $redisUrl['pass'];
+//   $settings['cache']['default'] = 'cache.backend.redis';
 
-  // Apply changes to the container configuration to better leverage Redis.
-  // This includes using Redis for the lock and flood control systems, as well
-  // as the cache tag checksum. Alternatively, copy the contents of that file
-  // to your project-specific services.yml file, modify as appropriate, and
-  // remove this line.
-  $settings['container_yamls'][] = $app_root . 'modules/contrib/redis/example.services.yml';
+//   // Apply changes to the container configuration to better leverage Redis.
+//   // This includes using Redis for the lock and flood control systems, as well
+//   // as the cache tag checksum. Alternatively, copy the contents of that file
+//   // to your project-specific services.yml file, modify as appropriate, and
+//   // remove this line.
+//   $settings['container_yamls'][] = $app_root . 'modules/contrib/redis/example.services.yml';
 
-  // Allow the services to work before the Redis module itself is enabled.
-  $settings['container_yamls'][] = $app_root . 'modules/contrib/redis/redis.services.yml';
+//   // Allow the services to work before the Redis module itself is enabled.
+//   $settings['container_yamls'][] = $app_root . 'modules/contrib/redis/redis.services.yml';
 
-  // Manually add the classloader path, this is required for the container cache bin definition below
-  // and allows to use it without the redis module being enabled.
-  $class_loader->addPsr4('Drupal\\redis\\', $app_root . 'modules/contrib/redis/src');
+//   // Manually add the classloader path, this is required for the container cache bin definition below
+//   // and allows to use it without the redis module being enabled.
+//   $class_loader->addPsr4('Drupal\\redis\\', $app_root . 'modules/contrib/redis/src');
 
-  // Use redis for container cache.
-  // The container cache is used to load the container definition itself, and
-  // thus any configuration stored in the container itself is not available
-  // yet. These lines force the container cache to use Redis rather than the
-  // default SQL cache.
-  $settings['bootstrap_container_definition'] = [
-    'parameters' => [],
-    'services' => [
-      'redis.factory' => [
-        'class' => 'Drupal\redis\ClientFactory',
-      ],
-      'cache.backend.redis' => [
-        'class' => 'Drupal\redis\Cache\CacheBackendFactory',
-        'arguments' => ['@redis.factory', '@cache_tags_provider.container', '@serialization.phpserialize'],
-      ],
-      'cache.container' => [
-        'class' => '\Drupal\redis\Cache\PhpRedis',
-        'factory' => ['@cache.backend.redis', 'get'],
-        'arguments' => ['container'],
-      ],
-      'cache_tags_provider.container' => [
-        'class' => 'Drupal\redis\Cache\RedisCacheTagsChecksum',
-        'arguments' => ['@redis.factory'],
-      ],
-      'serialization.phpserialize' => [
-        'class' => 'Drupal\Component\Serialization\PhpSerialize',
-      ],
-    ],
-  ];
-}
+//   // Use redis for container cache.
+//   // The container cache is used to load the container definition itself, and
+//   // thus any configuration stored in the container itself is not available
+//   // yet. These lines force the container cache to use Redis rather than the
+//   // default SQL cache.
+//   $settings['bootstrap_container_definition'] = [
+//     'parameters' => [],
+//     'services' => [
+//       'redis.factory' => [
+//         'class' => 'Drupal\redis\ClientFactory',
+//       ],
+//       'cache.backend.redis' => [
+//         'class' => 'Drupal\redis\Cache\CacheBackendFactory',
+//         'arguments' => ['@redis.factory', '@cache_tags_provider.container', '@serialization.phpserialize'],
+//       ],
+//       'cache.container' => [
+//         'class' => '\Drupal\redis\Cache\PhpRedis',
+//         'factory' => ['@cache.backend.redis', 'get'],
+//         'arguments' => ['container'],
+//       ],
+//       'cache_tags_provider.container' => [
+//         'class' => 'Drupal\redis\Cache\RedisCacheTagsChecksum',
+//         'arguments' => ['@redis.factory'],
+//       ],
+//       'serialization.phpserialize' => [
+//         'class' => 'Drupal\Component\Serialization\PhpSerialize',
+//       ],
+//     ],
+//   ];
+// }
 
 /**
  * Load local development override configuration, if available.

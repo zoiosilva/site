@@ -1,7 +1,9 @@
-uuid: c5000a67-aa61-460e-9e04-3c9eb9538e7d
+uuid: fa0ab0c9-eba9-41db-8ba8-3b62d2211699
 langcode: pt-br
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated

@@ -1,4 +1,4 @@
-uuid: 8cd84ba5-da46-4d39-b4a9-a453db974891
+uuid: 5127843a-2c59-4e15-ae93-0b4d95d2baa7
 langcode: pt-br
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   theme:
     - stark
 _core:
-  default_config_hash: OFEDxrButmQ8Vac1kiVr1gtw6vYKuSJPr9cJQZVKCKg
+  default_config_hash: 5MfnyzXbzrDa_OJuFfZfpiBYkMiuRp4mk4GM7HYc8eM
 id: stark_admin
 theme: stark
 region: sidebar_first
@@ -19,8 +19,8 @@ plugin: 'system_menu_block:admin'
 settings:
   id: 'system_menu_block:admin'
   label: Administração
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

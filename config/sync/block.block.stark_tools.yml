@@ -1,4 +1,4 @@
-uuid: eb279dcb-9a54-43bc-be46-3024b7017cfd
+uuid: 8286df01-fa08-4266-a9cb-d9e87580de55
 langcode: pt-br
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   theme:
     - stark
 _core:
-  default_config_hash: uUF2GYN2x5fcmOu26M-gwqUA-yVWMDD_MRmnYfmPzlM
+  default_config_hash: UL5ZZvI0Lnp3fmVmhIDxvNI9RlMD0sfBIOi9ozr-k5o
 id: stark_tools
 theme: stark
 region: sidebar_first
@@ -19,8 +19,8 @@ plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
   label: Ferramentas
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
