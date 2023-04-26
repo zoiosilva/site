@@ -7232,7 +7232,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.0.7",
+            "version": "10.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -7278,7 +7278,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.0.7"
+                "source": "https://github.com/drupal/core-dev/tree/10.0.8"
             },
             "time": "2023-02-23T15:40:18+00:00"
         },
@@ -8404,16 +8404,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.13",
+            "version": "1.10.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "f07bf8c6980b81bf9e49d44bd0caf2e737614a70"
+                "reference": "d232901b09e67538e5c86a724be841bea5768a7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f07bf8c6980b81bf9e49d44bd0caf2e737614a70",
-                "reference": "f07bf8c6980b81bf9e49d44bd0caf2e737614a70",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d232901b09e67538e5c86a724be841bea5768a7c",
+                "reference": "d232901b09e67538e5c86a724be841bea5768a7c",
                 "shasum": ""
             },
             "require": {
@@ -8462,7 +8462,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-12T19:29:52+00:00"
+            "time": "2023-04-19T13:47:27+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
