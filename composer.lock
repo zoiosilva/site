@@ -7232,16 +7232,16 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.0.8",
+            "version": "10.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
-                "reference": "88ef23ed37d23891afde3a1d10433fb82898a30a"
+                "reference": "22a053f9de0ce6ce9db2755693b9c81ddf86b3b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev/zipball/88ef23ed37d23891afde3a1d10433fb82898a30a",
-                "reference": "88ef23ed37d23891afde3a1d10433fb82898a30a",
+                "url": "https://api.github.com/repos/drupal/core-dev/zipball/22a053f9de0ce6ce9db2755693b9c81ddf86b3b7",
+                "reference": "22a053f9de0ce6ce9db2755693b9c81ddf86b3b7",
                 "shasum": ""
             },
             "require": {
@@ -7252,7 +7252,7 @@
                 "drupal/coder": "^8.3.10",
                 "instaclick/php-webdriver": "^1.4.1",
                 "justinrainbow/json-schema": "^5.2",
-                "mglaman/phpstan-drupal": "^1.1.29",
+                "mglaman/phpstan-drupal": "^1.1.31",
                 "mikey179/vfsstream": "^1.6.11",
                 "phpspec/prophecy-phpunit": "^2",
                 "phpstan/extension-installer": "^1.1",
@@ -7278,9 +7278,9 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.0.8"
+                "source": "https://github.com/drupal/core-dev/tree/10.0.9"
             },
-            "time": "2023-02-23T15:40:18+00:00"
+            "time": "2023-05-01T11:13:00+00:00"
         },
         {
             "name": "drupal/devel",
