@@ -1507,16 +1507,16 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "10.0.9",
+            "version": "10.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
-                "reference": "45e4f9ad3353531139bcdde280122b051df0dbe8"
+                "reference": "a5cfe62bcd85532730990f5df5c2922bc8d3f767"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/45e4f9ad3353531139bcdde280122b051df0dbe8",
-                "reference": "45e4f9ad3353531139bcdde280122b051df0dbe8",
+                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/a5cfe62bcd85532730990f5df5c2922bc8d3f767",
+                "reference": "a5cfe62bcd85532730990f5df5c2922bc8d3f767",
                 "shasum": ""
             },
             "require": {
@@ -1542,9 +1542,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-vendor-hardening/tree/10.0.9"
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/10.1.0"
             },
-            "time": "2022-12-07T11:22:37+00:00"
+            "time": "2022-12-07T11:22:31+00:00"
         },
         {
             "name": "drush/drush",
