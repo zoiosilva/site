@@ -64,16 +64,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "ccaca62c878e2857635cf8571125fb6f90a9b556"
+                "reference": "a66aa4333139185bc41a938b9a0773347cbd4bb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/ccaca62c878e2857635cf8571125fb6f90a9b556",
-                "reference": "ccaca62c878e2857635cf8571125fb6f90a9b556",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/a66aa4333139185bc41a938b9a0773347cbd4bb9",
+                "reference": "a66aa4333139185bc41a938b9a0773347cbd4bb9",
                 "shasum": ""
             },
             "require": {
@@ -81,27 +81,27 @@
                 "php": ">=8.1.0",
                 "psr/event-dispatcher": "^1.0",
                 "psr/log": "^3.0",
-                "symfony/console": "^6.2",
-                "symfony/dependency-injection": "^6.2",
-                "symfony/filesystem": "^6.2",
-                "symfony/string": "^6.2",
+                "symfony/console": "^6.3",
+                "symfony/dependency-injection": "^6.3",
+                "symfony/filesystem": "^6.3",
+                "symfony/string": "^6.3",
                 "twig/twig": "^3.4"
             },
             "conflict": {
-                "slevomat/coding-standard": "<8.6.4",
+                "slevomat/coding-standard": "<8.12.1",
                 "squizlabs/php_codesniffer": "<3.6"
             },
             "require-dev": {
-                "chi-teck/drupal-coder-extension": "^2.0.0-alpha2",
-                "drupal/coder": "8.3.17",
+                "chi-teck/drupal-coder-extension": "^2.0.0-alpha4",
+                "drupal/coder": "8.3.20",
                 "drupal/core": "10.1.x-dev",
                 "ext-simplexml": "*",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "^3.7",
-                "symfony/var-dumper": "^6.2",
-                "symfony/yaml": "^6.2",
-                "vimeo/psalm": "^5.4"
+                "symfony/var-dumper": "^6.3",
+                "symfony/yaml": "^6.3",
+                "vimeo/psalm": "^5.12"
             },
             "bin": [
                 "bin/dcg"
@@ -119,9 +119,9 @@
             "description": "Drupal code generator",
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
-                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.0.0"
+                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.1.0"
             },
-            "time": "2023-03-26T07:06:55+00:00"
+            "time": "2023-06-24T14:04:28+00:00"
         },
         {
             "name": "composer/installers",
@@ -3913,16 +3913,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v6.3.0",
+            "version": "v6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "97b698e1d77d356304def77a8d0cd73090b359ea"
+                "reference": "edd36776956f2a6fcf577edb5b05eb0e3bdc52ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/97b698e1d77d356304def77a8d0cd73090b359ea",
-                "reference": "97b698e1d77d356304def77a8d0cd73090b359ea",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/edd36776956f2a6fcf577edb5b05eb0e3bdc52ae",
+                "reference": "edd36776956f2a6fcf577edb5b05eb0e3bdc52ae",
                 "shasum": ""
             },
             "require": {
@@ -3956,7 +3956,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v6.3.0"
+                "source": "https://github.com/symfony/filesystem/tree/v6.3.1"
             },
             "funding": [
                 {
@@ -3972,7 +3972,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-30T17:12:32+00:00"
+            "time": "2023-06-01T08:30:39+00:00"
         },
         {
             "name": "symfony/finder",
