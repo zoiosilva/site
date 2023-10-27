@@ -10,9 +10,6 @@ updates:
   open-pull-requests-limit: 15
   assignees:
     - zoiosilva
-  labels:
-    - "dependabot"
-    - "composer update"
   allow:
   - dependency-type: direct
   - dependency-type: indirect
