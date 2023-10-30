@@ -1,8 +1,13 @@
 name: Dependabot auto-approve
+
 on:
   pull_request:
-    branches:
-      - 'dependabot/composer/**'
+    paths-ignore:
+      - "**/includes/**"
+      - "**/libraries/**"
+      - "**/node_modules/**"
+      - "**/source/**"
+      - "**/vendor/**"
 
 jobs:
   dependabot:
