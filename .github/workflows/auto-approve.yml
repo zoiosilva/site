@@ -1,8 +1,13 @@
 name: Dependabot auto-approve
+
 on:
   pull_request:
-    branches:
-      - 'dependabot/composer/**'
+    paths-ignore:
+      - "**/includes/**"
+      - "**/libraries/**"
+      - "**/node_modules/**"
+      - "**/source/**"
+      - "**/vendor/**"
 
 jobs:
   dependabot:
@@ -17,13 +22,7 @@ jobs:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
       - name: Approve a PR
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
-          GH_TOKEN: ${{ github.token }}
-
-      - name: Allow dependabot to merge it
-        run: gh pr review --comment --body "@dependabot squash and merge"
+        run: gh pr review --approve "$PR_URL" --comment --body "@dependabot squash and merge"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ github.token }}
