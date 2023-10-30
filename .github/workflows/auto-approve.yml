@@ -12,7 +12,6 @@ on:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: ${{ contains(github.actor, 'dependabot') }}
 
     steps:
       - name: Dependabot metadata
