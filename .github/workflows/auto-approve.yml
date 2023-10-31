@@ -8,7 +8,8 @@ on:
       - "**/node_modules/**"
       - "**/source/**"
       - "**/vendor/**"
-
+permissions:
+  pull-requests: write
 jobs:
   dependabot:
     runs-on: ubuntu-latest
