@@ -1,5 +1,5 @@
-uuid: 8fdb5be2-0704-4bd2-88d7-37bfa8b57593
-langcode: pt-br
+uuid: 4e4247c1-a757-4913-8c69-df87ef822ad6
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Usuário anônimo'
+label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:

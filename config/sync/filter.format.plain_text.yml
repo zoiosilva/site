@@ -1,10 +1,10 @@
-uuid: eff7bd1d-df41-44d7-9763-17bea0079cb1
-langcode: pt-br
+uuid: f964542a-7960-4401-a6d3-75cdde6ed25f
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
-name: 'Texto puro'
+name: 'Plain text'
 format: plain_text
 weight: 10
 filters:

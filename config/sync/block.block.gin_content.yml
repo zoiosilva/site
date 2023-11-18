@@ -1,15 +1,15 @@
-uuid: 5e7cc88b-47ef-4bff-b941-357a3ab77788
+uuid: 5e554567-b059-4304-a1b4-839ff4192d09
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - claro
+    - gin
 _core:
-  default_config_hash: a0Yyx1GeyKarZ4T_yXQBR_ZFKnXiFLtxAb6gWLd8nr0
-id: claro_content
-theme: claro
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: gin_content
+theme: gin
 region: content
 weight: 0
 provider: null

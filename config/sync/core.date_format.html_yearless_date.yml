@@ -1,10 +1,10 @@
-uuid: ed74e18a-818c-4047-93d1-85444b778459
-langcode: pt-br
+uuid: 74ccaf64-589e-437d-ae45-9ea2c48d3418
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: 5VpawMrKPEPCkoO4YpPa0TDFO2dgiIHfTziJtwlmUxc
 id: html_yearless_date
-label: 'Data HTML sem ano'
+label: 'HTML Yearless date'
 locked: true
 pattern: m-d

@@ -1,5 +1,5 @@
-uuid: 5127843a-2c59-4e15-ae93-0b4d95d2baa7
-langcode: pt-br
+uuid: 2503cb9b-dc7f-419a-be1b-7fbdde1b762b
+langcode: en
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:admin'
 settings:
   id: 'system_menu_block:admin'
-  label: Administração
+  label: Administration
   label_display: visible
   provider: system
   level: 1
