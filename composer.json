@@ -14,7 +14,7 @@
         "ext-apcu": "*",
         "ext-curl": "*",
         "ext-mbstring": "*",
-        "composer/installers": "^1.2 || ^2.0",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/core-composer-scaffold": "^10.0",
@@ -28,7 +28,7 @@
         "heroku/heroku-buildpack-php": "*",
         "php-parallel-lint/php-parallel-lint": "^1.3",
         "phpcompatibility/php-compatibility": "^9.3",
-        "slevomat/coding-standard": "^8.4"
+        "slevomat/coding-standard": ">=8.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -111,10 +111,20 @@
         "patches": {
         },
         "drupal-core-vendor-hardening": {
-          "drupal/admin_toolbar": ["tests", "admin_toolbar_search/tests", "admin_toolbar_tools/tests"],
-          "drupal/devel": ["tests", "devel_generate/tests"],
-          "drupal/devel_php": ["tests"],
-          "drupal/redis": ["tests"]
+            "consolidation/filter-via-dot-access-data": ["tests"],
+            "consolidation/log": ["tests"],
+            "consolidation/site-alias": ["tests"],
+            "consolidation/site-process": ["tests"],
+            "cweagans/composer-patches": ["tests"],
+            "drupal/admin_toolbar": ["tests", "admin_toolbar_search/tests", "admin_toolbar_tools/tests"],
+            "drupal/devel": ["tests", "devel_generate/tests"],
+            "drupal/devel_php": ["tests"],
+            "drupal/redis": ["tests"],
+            "grasmash/expander": ["tests"],
+            "grasmash/yaml-cli": ["tests"],
+            "heroku/heroku-buildpack-php": ["test"],
+            "phpowermove/docblock": ["tests"],
+            "webflo/drupal-finder": ["tests"]
         }
     }
 }
