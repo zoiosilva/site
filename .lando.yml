@@ -14,11 +14,15 @@ events:
 
 services:
   appserver:
+    build_as_root:
+      - apt-get update && apt-get install -y openjdk-17-jdk maven
     overrides:
       environment:
         PHP_IDE_CONFIG: serverName=localhost
         XDEBUG_MODE: debug
         XDEBUG_SESSION: PHPSTORM
+        JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+        PATH: ${PATH}:/usr/lib/jvm/java-17-openjdk-amd64/bin
       volumes:
         - ${HOME}/.lando/composer_cache:/var/www/.composer
 #   cache:
@@ -63,3 +67,10 @@ tooling:
     service: appserver
     env:
       DRUSH_OPTIONS_URI: "https://personal-site.lndo.site/"
+  java:
+    service: appserver
+    cmd: java
+  mvn:
+    service: appserver
+    description: maven
+    cmd: cd l2jmobius/ && mvn
