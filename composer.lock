@@ -2632,16 +2632,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "2218c2252c874a4624ab2f613d86ac32d227bc69"
+                "reference": "139676794dc1e9231bf7bcd123cfc0c99182cb13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2218c2252c874a4624ab2f613d86ac32d227bc69",
-                "reference": "2218c2252c874a4624ab2f613d86ac32d227bc69",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/139676794dc1e9231bf7bcd123cfc0c99182cb13",
+                "reference": "139676794dc1e9231bf7bcd123cfc0c99182cb13",
                 "shasum": ""
             },
             "require": {
@@ -2684,9 +2684,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.0.1"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.0.2"
             },
-            "time": "2024-02-21T19:24:10+00:00"
+            "time": "2024-03-05T20:51:40+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -7727,16 +7727,16 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.2.3",
+            "version": "10.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
-                "reference": "8c1bf854f2cf47d4f06918099ea866ce2471b2c6"
+                "reference": "71d714deff8c277b8ef2f331f3bddbba03274dc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev/zipball/8c1bf854f2cf47d4f06918099ea866ce2471b2c6",
-                "reference": "8c1bf854f2cf47d4f06918099ea866ce2471b2c6",
+                "url": "https://api.github.com/repos/drupal/core-dev/zipball/71d714deff8c277b8ef2f331f3bddbba03274dc1",
+                "reference": "71d714deff8c277b8ef2f331f3bddbba03274dc1",
                 "shasum": ""
             },
             "require": {
@@ -7744,7 +7744,7 @@
                 "behat/mink-browserkit-driver": "^2.1",
                 "behat/mink-selenium2-driver": "^1.4",
                 "colinodell/psr-testlogger": "^1.2",
-                "composer/composer": "^2.6.4",
+                "composer/composer": "^2.7",
                 "drupal/coder": "^8.3.10",
                 "instaclick/php-webdriver": "^1.4.1",
                 "justinrainbow/json-schema": "^5.2",
@@ -7777,9 +7777,9 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.2.3"
+                "source": "https://github.com/drupal/core-dev/tree/10.2.4"
             },
-            "time": "2023-12-12T22:01:45+00:00"
+            "time": "2024-02-14T18:07:20+00:00"
         },
         {
             "name": "drupal/devel",
