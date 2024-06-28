@@ -1674,26 +1674,26 @@
         },
         {
             "name": "drupal/gin_login",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_login.git",
-                "reference": "2.1.1"
+                "reference": "2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_login-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "70e826a3fe80cdee5adf1ae1efa0e0b163d1e24a"
+                "url": "https://ftp.drupal.org/files/projects/gin_login-2.1.2.zip",
+                "reference": "2.1.2",
+                "shasum": "d1662ad89538ceb08660f582826b0fddf1f0a342"
             },
             "require": {
-                "drupal/core": "^8.9 || ^9 || ^10 || ^11"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1718385917",
+                    "version": "2.1.2",
+                    "datestamp": "1718646339",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
