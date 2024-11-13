@@ -2507,7 +2507,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v11.30.0",
+            "version": "v11.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
