@@ -2553,16 +2553,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v11.33.2",
+            "version": "v11.34.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "44c15aec6ea0d997e0885aa5b04876fe8a141433"
+                "reference": "184317f701ba20ca265e36808ed54b75b115972d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/44c15aec6ea0d997e0885aa5b04876fe8a141433",
-                "reference": "44c15aec6ea0d997e0885aa5b04876fe8a141433",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/184317f701ba20ca265e36808ed54b75b115972d",
+                "reference": "184317f701ba20ca265e36808ed54b75b115972d",
                 "shasum": ""
             },
             "require": {
@@ -2597,7 +2597,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-11-15T15:40:33+00:00"
+            "time": "2024-11-25T15:33:38+00:00"
         },
         {
             "name": "illuminate/macroable",
