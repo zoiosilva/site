@@ -20,7 +20,7 @@
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-recommended": "^10.0",
         "drupal/core-vendor-hardening": "^11.0",
-        "drupal/gin": "^3.0@RC",
+        "drupal/gin": "^4.0@RC",
         "drupal/gin_login": "^2.0",
         "drupal/gin_toolbar": "^1.0@RC",
         "drush/drush": "^13.0"
