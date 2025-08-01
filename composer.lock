@@ -7982,16 +7982,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v270",
+            "version": "v271",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "24edfcc0c6961cab7851a9c483a6a690531ad029"
+                "reference": "ef47055d9630c842536b876b04325c337b51fd2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/24edfcc0c6961cab7851a9c483a6a690531ad029",
-                "reference": "24edfcc0c6961cab7851a9c483a6a690531ad029",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/ef47055d9630c842536b876b04325c337b51fd2c",
+                "reference": "ef47055d9630c842536b876b04325c337b51fd2c",
                 "shasum": ""
             },
             "bin": [
@@ -8021,9 +8021,9 @@
             ],
             "support": {
                 "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
-                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v270"
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v271"
             },
-            "time": "2025-07-30T13:37:54+00:00"
+            "time": "2025-07-31T20:24:02+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
