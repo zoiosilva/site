@@ -8895,16 +8895,16 @@
         },
         {
             "name": "open-telemetry/sem-conv",
-            "version": "1.32.1",
+            "version": "1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sem-conv.git",
-                "reference": "94daa85ea61a8e2b7e1b0af6be0e875bedda7c22"
+                "reference": "60dd18fd21d45e6f4234ecab89c14021b6e3de9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sem-conv/zipball/94daa85ea61a8e2b7e1b0af6be0e875bedda7c22",
-                "reference": "94daa85ea61a8e2b7e1b0af6be0e875bedda7c22",
+                "url": "https://api.github.com/repos/opentelemetry-php/sem-conv/zipball/60dd18fd21d45e6f4234ecab89c14021b6e3de9a",
+                "reference": "60dd18fd21d45e6f4234ecab89c14021b6e3de9a",
                 "shasum": ""
             },
             "require": {
@@ -8948,7 +8948,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2025-06-24T02:32:27+00:00"
+            "time": "2025-08-04T03:22:08+00:00"
         },
         {
             "name": "phar-io/manifest",
