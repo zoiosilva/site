@@ -15,7 +15,7 @@
         "ext-curl": "*",
         "ext-mbstring": "*",
         "composer/installers": "^2.0",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "^2.0",
         "drupal/admin_toolbar": "^3.0",
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-recommended": "^10.0",
