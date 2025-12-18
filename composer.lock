@@ -1594,16 +1594,16 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "11.2.10",
+            "version": "11.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
-                "reference": "8526ec56f55995037b79aae19aeb7a503ca98145"
+                "reference": "1ec96b3ba92c11b04b9650d832cb7c9b0cc058e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/8526ec56f55995037b79aae19aeb7a503ca98145",
-                "reference": "8526ec56f55995037b79aae19aeb7a503ca98145",
+                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/1ec96b3ba92c11b04b9650d832cb7c9b0cc058e1",
+                "reference": "1ec96b3ba92c11b04b9650d832cb7c9b0cc058e1",
                 "shasum": ""
             },
             "require": {
@@ -1629,9 +1629,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-vendor-hardening/tree/11.2.10"
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/11.3.0"
             },
-            "time": "2025-08-12T14:01:32+00:00"
+            "time": "2025-08-12T14:00:55+00:00"
         },
         {
             "name": "drupal/gin",
