@@ -4438,16 +4438,16 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v6.4.39",
+            "version": "v6.4.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "79329748e3d8a9cd02ec1caedbf92601b269fe39"
+                "reference": "41dff5c3d03b3fa20947c552c5f6ba74ca43fa28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/79329748e3d8a9cd02ec1caedbf92601b269fe39",
-                "reference": "79329748e3d8a9cd02ec1caedbf92601b269fe39",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/41dff5c3d03b3fa20947c552c5f6ba74ca43fa28",
+                "reference": "41dff5c3d03b3fa20947c552c5f6ba74ca43fa28",
                 "shasum": ""
             },
             "require": {
@@ -4532,7 +4532,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v6.4.39"
+                "source": "https://github.com/symfony/http-kernel/tree/v6.4.40"
             },
             "funding": [
                 {
@@ -4552,7 +4552,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-13T17:49:58+00:00"
+            "time": "2026-05-20T08:55:59+00:00"
         },
         {
             "name": "symfony/mailer",
