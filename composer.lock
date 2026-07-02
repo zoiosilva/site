@@ -1463,16 +1463,16 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "11.3.13",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "cb417c20910980aa6d40dc0626af795f9308bcca"
+                "reference": "9701537e3e918cdade701ac05642fa075714d29e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/cb417c20910980aa6d40dc0626af795f9308bcca",
-                "reference": "cb417c20910980aa6d40dc0626af795f9308bcca",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/9701537e3e918cdade701ac05642fa075714d29e",
+                "reference": "9701537e3e918cdade701ac05642fa075714d29e",
                 "shasum": ""
             },
             "require": {
@@ -1489,7 +1489,7 @@
             "extra": {
                 "class": "Drupal\\Composer\\Plugin\\Scaffold\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-main": "11.x-dev"
                 }
             },
             "autoload": {
@@ -1507,9 +1507,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.3.13"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.4.0"
             },
-            "time": "2026-02-10T11:39:53+00:00"
+            "time": "2026-05-11T09:50:32+00:00"
         },
         {
             "name": "drupal/core-recommended",
