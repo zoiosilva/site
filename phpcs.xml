@@ -45,7 +45,7 @@
   <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
   <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
     <properties>
-      <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+      <property name="linesCountBeforeDeclare" value="1"/>
       <property name="spacesCountAroundEqualsSign" value="1"/>
     </properties>
   </rule>
