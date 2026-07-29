@@ -5,8 +5,8 @@
   <arg name="colors"/>
   <arg name="report-width" value="auto"/>
   
-  <!-- Check for cross-version support for PHP 8.1 and higher. -->
-  <config name="testVersion" value="8.1-"/>
+  <!-- Check for cross-version support for PHP 8.4 and higher. -->
+  <config name="testVersion" value="8.4-"/>
 
   <!--Exclude third party code.-->
   <exclude-pattern>*/libraries/*</exclude-pattern>
@@ -45,7 +45,7 @@
   <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
   <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
     <properties>
-      <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+      <property name="linesCountBeforeDeclare" value="1"/>
       <property name="spacesCountAroundEqualsSign" value="1"/>
     </properties>
   </rule>

@@ -1,16 +1,18 @@
 name: personal-site
-recipe: drupal9
+recipe: drupal10
 config:
   via: nginx
   composer_version: 2-latest
   database: mariadb:10.6
-  php: '8.2'
+  php: '8.4'
   webroot: web
   xdebug: false
 
 events:
   post-start:
     - appserver: composer install
+  post-rebuild:
+    - assets/lando_post_rebuild.sh
 
 services:
   appserver:
