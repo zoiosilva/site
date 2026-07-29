@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "991806e503cb964112cb89f52b5614ac",
+    "content-hash": "9d94297e8b762a473415febcb7f4eac7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -807,30 +807,99 @@
             "time": "2026-06-07T03:26:06+00:00"
         },
         {
-            "name": "cweagans/composer-patches",
-            "version": "1.7.3",
+            "name": "cweagans/composer-configurable-plugin",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db"
+                "url": "https://github.com/cweagans/composer-configurable-plugin.git",
+                "reference": "15433906511a108a1806710e988629fd24b89974"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
-                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "url": "https://api.github.com/repos/cweagans/composer-configurable-plugin/zipball/15433906511a108a1806710e988629fd24b89974",
+                "reference": "15433906511a108a1806710e988629fd24b89974",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=5.3.0"
+                "php": ">=8.0.0"
             },
             "require-dev": {
-                "composer/composer": "~1.0 || ~2.0",
-                "phpunit/phpunit": "~4.6"
+                "codeception/codeception": "~4.0",
+                "codeception/module-asserts": "^2.0",
+                "composer/composer": "~2.0",
+                "php-coveralls/php-coveralls": "~2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0.0",
+                "phpro/grumphp": "^1.8.0",
+                "sebastian/phpcpd": "^6.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a lightweight configuration system for Composer plugins.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-configurable-plugin/issues",
+                "source": "https://github.com/cweagans/composer-configurable-plugin/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/cweagans",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-02-12T04:58:58+00:00"
+        },
+        {
+            "name": "cweagans/composer-patches",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "bfa6018a5f864653d9ed899b902ea72f858a2cf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/bfa6018a5f864653d9ed899b902ea72f858a2cf7",
+                "reference": "bfa6018a5f864653d9ed899b902ea72f858a2cf7",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "cweagans/composer-configurable-plugin": "^2.0",
+                "ext-json": "*",
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "~4.0",
+                "codeception/module-asserts": "^2.0",
+                "codeception/module-cli": "^2.0",
+                "codeception/module-filesystem": "^2.0",
+                "composer/composer": "~2.0",
+                "php-coveralls/php-coveralls": "~2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0.0",
+                "phpro/grumphp": "^1.8.0",
+                "sebastian/phpcpd": "^6.0",
+                "squizlabs/php_codesniffer": "^4.0"
             },
             "type": "composer-plugin",
             "extra": {
-                "class": "cweagans\\Composer\\Patches"
+                "_": "The following two lines ensure that composer-patches is loaded as early as possible.",
+                "class": "cweagans\\Composer\\Plugin\\Patches",
+                "plugin-modifies-downloads": true,
+                "plugin-modifies-install-path": true
             },
             "autoload": {
                 "psr-4": {
@@ -850,9 +919,15 @@
             "description": "Provides a way to patch Composer packages.",
             "support": {
                 "issues": "https://github.com/cweagans/composer-patches/issues",
-                "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
+                "source": "https://github.com/cweagans/composer-patches/tree/2.0.0"
             },
-            "time": "2022-12-20T22:53:13+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/cweagans",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-30T23:44:22+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1312,16 +1387,16 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.6.14",
+            "version": "11.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "db17b59620ce1c142a34dc017d9e696ce4771e55"
+                "reference": "678f9ecb912958ebb046d6f9122b84a0cc6401ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/db17b59620ce1c142a34dc017d9e696ce4771e55",
-                "reference": "db17b59620ce1c142a34dc017d9e696ce4771e55",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/678f9ecb912958ebb046d6f9122b84a0cc6401ff",
+                "reference": "678f9ecb912958ebb046d6f9122b84a0cc6401ff",
                 "shasum": ""
             },
             "require": {
@@ -1338,7 +1413,7 @@
             "extra": {
                 "class": "Drupal\\Composer\\Plugin\\Scaffold\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-main": "11.x-dev"
                 }
             },
             "autoload": {
@@ -1356,9 +1431,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.6.14"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.4.4"
             },
-            "time": "2024-08-22T14:31:30+00:00"
+            "time": "2026-07-09T23:23:24+00:00"
         },
         {
             "name": "drupal/core-recommended",
@@ -1445,16 +1520,16 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "10.6.14",
+            "version": "11.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
-                "reference": "0ded64f65ef468e19823ed1917852fed8b2f0895"
+                "reference": "1df275fca6b89c94cc32a432023c6a4456cc4f47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/0ded64f65ef468e19823ed1917852fed8b2f0895",
-                "reference": "0ded64f65ef468e19823ed1917852fed8b2f0895",
+                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/1df275fca6b89c94cc32a432023c6a4456cc4f47",
+                "reference": "1df275fca6b89c94cc32a432023c6a4456cc4f47",
                 "shasum": ""
             },
             "require": {
@@ -1463,7 +1538,10 @@
             },
             "type": "composer-plugin",
             "extra": {
-                "class": "Drupal\\Composer\\Plugin\\VendorHardening\\VendorHardeningPlugin"
+                "class": "Drupal\\Composer\\Plugin\\VendorHardening\\VendorHardeningPlugin",
+                "branch-alias": {
+                    "dev-main": "11.x-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -1480,9 +1558,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-vendor-hardening/tree/10.6.14"
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/11.4.4"
             },
-            "time": "2024-11-11T20:19:58+00:00"
+            "time": "2026-01-07T19:00:53+00:00"
         },
         {
             "name": "drupal/gin",
@@ -12774,7 +12852,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -12783,6 +12861,6 @@
         "ext-curl": "*",
         "ext-mbstring": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
 }

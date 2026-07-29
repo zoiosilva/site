@@ -15,15 +15,15 @@
         "ext-curl": "*",
         "ext-mbstring": "*",
         "composer/installers": "^2.0",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "^2.0",
         "drupal/admin_toolbar": "^3.0",
-        "drupal/core-composer-scaffold": "^10.0",
+        "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-recommended": "^10.0",
-        "drupal/core-vendor-hardening": "^10.0",
+        "drupal/core-vendor-hardening": "^11.0",
         "drupal/gin": "^4.1",
         "drupal/gin_login": "^2.1",
         "drupal/gin_toolbar": "^2.1",
-        "drush/drush": "^13"
+        "drush/drush": "^13.0"
     },
       "require-dev": {
         "drupal/core-dev": "^10.0",
