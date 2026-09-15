@@ -4446,16 +4446,16 @@
         },
         {
             "name": "symfony/mailer",
-            "version": "v6.4.44",
+            "version": "v6.4.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "cea6ee2fb64d486f709d80bd3158cf28346e1ba4"
+                "reference": "21cc391f6f6a20b8765125cabee0c6195b5b8f10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/cea6ee2fb64d486f709d80bd3158cf28346e1ba4",
-                "reference": "cea6ee2fb64d486f709d80bd3158cf28346e1ba4",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/21cc391f6f6a20b8765125cabee0c6195b5b8f10",
+                "reference": "21cc391f6f6a20b8765125cabee0c6195b5b8f10",
                 "shasum": ""
             },
             "require": {
@@ -4506,7 +4506,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v6.4.44"
+                "source": "https://github.com/symfony/mailer/tree/v6.4.46"
             },
             "funding": [
                 {
@@ -4526,20 +4526,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-21T13:01:07+00:00"
+            "time": "2026-09-14T23:26:17+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v6.4.45",
+            "version": "v6.4.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "3f850171f3bb396a84117ca97d3d474fc4b83deb"
+                "reference": "e700a9819829e1395ae95b508c6355053b5644fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/3f850171f3bb396a84117ca97d3d474fc4b83deb",
-                "reference": "3f850171f3bb396a84117ca97d3d474fc4b83deb",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/e700a9819829e1395ae95b508c6355053b5644fe",
+                "reference": "e700a9819829e1395ae95b508c6355053b5644fe",
                 "shasum": ""
             },
             "require": {
@@ -4595,7 +4595,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v6.4.45"
+                "source": "https://github.com/symfony/mime/tree/v6.4.46"
             },
             "funding": [
                 {
@@ -4615,7 +4615,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-22T07:48:48+00:00"
+            "time": "2026-09-04T10:11:03+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
