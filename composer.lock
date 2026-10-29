@@ -12222,16 +12222,16 @@
         },
         {
             "name": "symfony/lock",
-            "version": "v6.4.48",
+            "version": "v6.4.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/lock.git",
-                "reference": "bb18c2ad3b61bcddb4385b50f1c86e17a7dac035"
+                "reference": "c7e088228a5a580a5db4e25495b07f115f91140c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/lock/zipball/bb18c2ad3b61bcddb4385b50f1c86e17a7dac035",
-                "reference": "bb18c2ad3b61bcddb4385b50f1c86e17a7dac035",
+                "url": "https://api.github.com/repos/symfony/lock/zipball/c7e088228a5a580a5db4e25495b07f115f91140c",
+                "reference": "c7e088228a5a580a5db4e25495b07f115f91140c",
                 "shasum": ""
             },
             "require": {
@@ -12281,7 +12281,7 @@
                 "semaphore"
             ],
             "support": {
-                "source": "https://github.com/symfony/lock/tree/v6.4.48"
+                "source": "https://github.com/symfony/lock/tree/v6.4.49"
             },
             "funding": [
                 {
@@ -12301,7 +12301,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-04T13:21:49+00:00"
+            "time": "2026-10-24T06:01:11+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",
