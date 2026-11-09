@@ -8740,21 +8740,24 @@
         },
         {
             "name": "open-telemetry/gen-otlp-protobuf",
-            "version": "1.10.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/gen-otlp-protobuf.git",
-                "reference": "66f04d0e448ad333033bfc7baae1aa56330be088"
+                "reference": "2576debe70233e4f45380e255d3d0b1a82679ca9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/gen-otlp-protobuf/zipball/66f04d0e448ad333033bfc7baae1aa56330be088",
-                "reference": "66f04d0e448ad333033bfc7baae1aa56330be088",
+                "url": "https://api.github.com/repos/opentelemetry-php/gen-otlp-protobuf/zipball/2576debe70233e4f45380e255d3d0b1a82679ca9",
+                "reference": "2576debe70233e4f45380e255d3d0b1a82679ca9",
                 "shasum": ""
             },
             "require": {
-                "google/protobuf": "^3.22 || ^4.0 || ^5.0",
+                "google/protobuf": "^4.31 || ^5.0",
                 "php": "^8.0"
+            },
+            "conflict": {
+                "ext-protobuf": "<4.31"
             },
             "suggest": {
                 "ext-protobuf": "For better performance, when dealing with the protobuf format"
@@ -8799,7 +8802,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2026-06-17T12:06:32+00:00"
+            "time": "2026-11-05T11:54:49+00:00"
         },
         {
             "name": "open-telemetry/sdk",
