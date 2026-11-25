@@ -12648,16 +12648,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v6.4.49",
+            "version": "v6.4.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "4335584c277b996804c6a931bd897a200a74da88"
+                "reference": "4dfb3d0ff02c0b1b1731efb3501c316eba61468c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/4335584c277b996804c6a931bd897a200a74da88",
-                "reference": "4335584c277b996804c6a931bd897a200a74da88",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/4dfb3d0ff02c0b1b1731efb3501c316eba61468c",
+                "reference": "4dfb3d0ff02c0b1b1731efb3501c316eba61468c",
                 "shasum": ""
             },
             "require": {
@@ -12713,7 +12713,7 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v6.4.49"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v6.4.51"
             },
             "funding": [
                 {
@@ -12733,7 +12733,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-18T07:40:41+00:00"
+            "time": "2026-11-16T12:28:42+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
